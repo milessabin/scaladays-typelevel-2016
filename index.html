@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typelevel in 2016 &mdash; Scala Days Berlin 2016</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style type="text/css">
+    body {
+      font-family: 'Lato';
+    }
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+    .remark-code, .remark-inline-code {
+      font-family: 'DejaVu Sans Mono';
+    }
+
+    .remark-slide-content {
+      background-repeat: no-repeat !important;
+    }
+    .typelevel {
+      background: #0E2C3C;
+      color: white;
+      font-size: 180%;
+    }
+    .typelevel a {
+      color: white;
+      text-decoration: none;
+    }
+    .typelevel h1 {
+      text-align: center;
+    }
+    .what-logo {
+      background-size: contain;
+      background-position: center;
+    }
+    .centered {
+      margin-top: 15%;
+    }
+    .text-centered {
+      margin-left: 22%
+    }
+    .centeredimg {
+      margin-top: 4%;
+    }
+    .summit h1 {
+      text-shadow: rgba(255,255,255,.1) -1px -1px 1px, rgba(0,0,0,.5) 1px 1px 1px;
+    }
+    .hack-the-tower h2 {
+      margin-top: 40vh;
+    }
+    .sponsors {
+      background: white;
+    }
+    .sponsors img {
+      max-height: 7vh;
+    }
+    .cats {
+      background: white;
+    }
+    .cats img {
+      height: 60vh;
+    }
+    .title > h1 {
+      margin-top: -5%;
+      font-size: 200%;
+    }
+    .title > h2 {
+      font-size: 150%;
+    }
+    .title > h3  {
+      font-size: 100%;
+    }
+    .title img {
+      margin-bottom: -20%;
+      height: 5em;
+    }
+    .exclaim h1 {
+      font-size: 600%
+    }
+    ol {
+      margin: 0;
+      padding: 0;
+      line-height: 60px;
+      list-style-type: none;
+    }
+    ul > li {
+      margin: 3% 0 3% 0;
+      padding: 0;
+    }
+    blockquote {
+      font-size: 200%;
+    }
+    .wide {
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background-image: url(img/hero-left-overlay-white.svg);
+      webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="source">
+    name: inverse
+    layout: true
+    class: typelevel
+    ---
+    class: center, middle, hero
+
+    .title[
+      # Typelevel in 2016
+
+      ## Miles Sabin, [@milessabin](http://twitter.com/milessabin)
+
+      [![Typelevel logo](img/logo.svg)](http://typelevel.org)
+    ]
+
+    ---
+    class: center, middle, what-logo
+    background-image: url(img/logo-no-text.svg)
+
+    ---
+    class: center, middle
+
+    # What is Typelevel?
+
+    ---
+    # Typelevel is ...
+
+    Typelevel is a community of projects and individuals organized around ...
+
+    --
+    * Pure, typeful, functional programming in Scala
+
+    --
+    * Independent, free/libre and open source software
+
+    --
+    * A desire to share ideas and code
+
+    --
+    * Accessible and idiomatic learning resources
+
+    --
+    * An inclusive, welcoming and safe environment
+
+    --
+
+    See Erik Osheim's talk at Scala World last year ...
+
+    ---
+    class: center
+
+    # Typelevel is ...
+
+    .centered[
+      # http://typelevel.org
+      # http://github.com/typelevel/general
+      # http://gitter.im/typelevel/general
+    ]
+
+    ---
+    class: center
+
+    # Typelevel is ...
+
+    .centered[
+      ## a community of projects ...
+    ]
+
+    ---
+    # a community of projects ...
+
+    * Standalone libraries
+    
+      Cats, Alleycats, Kittens, Dogs
+
+      shapeless, refined
+
+      spire, algebra
+
+      Monocle
+
+      scodec, circe 
+
+      doobie
+
+    ---
+    # a community of projects ...
+
+    * Tools, tests and laws
+
+      Ensime
+
+      tut
+
+      discipline
+
+      ScalaCheck
+
+      specs2
+
+      catalysts
+
+    ---
+    # a community of projects ...
+
+    * Integrations
+
+      argonaut-shapeless
+
+      scalacheck-shapeless
+
+      spray-json-shapeless
+
+      shapeless-contrib
+    ---
+    # a community of projects ...
+
+    * Macro/plugin helpers
+
+      kind-projector
+
+      simulacrum, machinist, export-hook, imp, local-implicits
+
+      macro-compat
+
+    ---
+    # a community of projects ...
+
+    * New arrivals
+
+      Finch, http4s, Monix
+
+      Squants
+
+      Frameless
+
+      Matryoshka
+
+      eff-cats
+
+      delta
+    ---
+    background-image: url(img/stickers.jpg)
+
+    ---
+    class: middle, center
+    background-image: url(img/stickers.jpg)
+
+    ![Settlers of Catan](img/settlers-of-catan.png)
+
+    ---
+    class: middle, center
+    background-image: url(img/stickers-applied.jpg)
+
+    ---
+    class: center
+
+    # a community of projects ...
+
+    .centered[
+      ## What about Typelevel Scala?
+    ]
+
+    ---
+    class: center
+
+    # Typelevel is ...
+
+    .centered[
+      ## a community of projects ...
+    ]
+    
+    --
+    ## ... and people ...
+
+    ---
+    class: center, summit
+    background-image: url(img/philly-summit.jpg)
+
+    # Typelevel Summit Philadelphia
+    ---
+    class: center, summit
+    background-image: url(img/oslo-summit.jpg)
+
+    # Typelevel Summit Oslo
+    ---
+    class: center, summit
+    background-image: url(img/hack-the-tower.jpg)
+
+    # Typelevel @HackTheTower
+
+    ---
+    class: center, middle, sponsors
+
+    ![](img/47_degrees.png)
+    ![](img/arktekk.png)
+    ![](img/box.png)
+    ![](img/commbank.png)
+    ![](img/comcast.png)
+    ![](img/lightbend.png)
+    ![](img/mediamath.png)
+    ![](img/scotiabank.png)
+    ![](img/underscore.png)
+    ![](img/verizon.png)
+
+    ---
+    # Upcoming Events
+
+    * Scala World, Lake District, UK, 10-14 Sept
+
+    --
+    * Scala.IO, Lyons, France, 27-28 Oct
+
+    --
+    * Lambda World, Cadiz, Spain, Sept 30/Oct 1
+
+    --
+    * Scala By The Bay, San Francisco, USA, 11-13 Nov
+
+    --
+    * Scala eXchange, London, UK, 8-9 Dec
+
+    --
+
+    .text-centered[We want to organize more ... get in touch!]
+
+    ---
+    class: center, hack-the-tower
+    background-image: url(img/hack-the-tower-pano.jpg)
+
+    # Upcoming Events
+
+    ## Typelevel @HackTheTower ...
+    ---
+    # Upcoming Events
+
+    * Typelevel hack days @HackTheTower
+
+    --
+      * Monthly at the Salesforce Tower in London, next 16 Jul, 13 Aug
+
+    --
+      * Introduction to Scala and FP
+
+    --
+      * Typelevel libraries: Cats, shapeless
+
+    --
+      * Ensime
+
+    --
+      * Scala compiler hacking
+
+    --
+    * Start your own!
+
+    ---
+    class: center, middle, cats
+
+    ![](img/cats.png)
+    ---
+    # Cats Update
+
+    * Cats is a library of abstractions for functional programming in Scala
+
+    --
+    * Started at the beginning of 2015 by Erik Osheim
+
+    --
+    * Now at 2188 commits and 96 contributors
+
+    --
+    * Emphasis on approachability as much as technical merit
+
+    --
+    * Modular, with a small stable kernel of fundamental type classes
+
+    ---
+    # Cats Update
+
+    * Nearing a 1.0 release, no longer "experimental"
+
+    --
+    * Growing body of documentation and other resources, very lively gitter channel
+
+    --
+    * Finally a Task/IO story &mdash; two solid implementations with Cats support
+
+    --
+      * Monix &mdash; Scala.js friendly
+
+    --
+      * fs2 &mdash; smooth transition from Scalaz Task
+
+    --
+    * Driving innovation in the language itself ...
+
+    ---
+    class: middle, center
+
+    # Typelevel Scala
+
+    ---
+    # Typelevel Scala
+
+    * Fork of Scala initiated at the end of 2014
+    
+    --
+    * Aim to address issues of particular concern for the Typelevel style
+
+    --
+    * Stalled at the beginning of 2015
+
+    --
+    * Plugins, macros and other workarounds filled some of the gaps
+
+    --
+    * Fundamental issues remain
+
+    ---
+    class: center
+
+    # Typelevel Scala
+
+    .centeredimg[
+      ![SI-2712 or bust](img/resolution.png)
+    ]
+    ---
+    class: center
+
+    # Typelevel Scala
+
+    .centeredimg[
+      ![SI-2712 or bust](img/hopes-up.png)
+    ]
+    ---
+    class: center
+
+    # Typelevel Scala
+
+    .centeredimg[
+      ![SI-2712 or bust](img/merged.png)
+    ]
+    ---
+    class: middle
+
+    ```text
+    @milessabin:
+    The really depressing thing is, looking at the patch, we
+    could have fixed this years ago.
+
+    @runarorama:
+    Yeah. I remember seeing Paul's comment on this and thinking
+    "that's reasonable, somebody should try it"
+
+    @milessabin:
+    Ditto, but nobody did.
+
+    @runarorama:
+    :-(
+    ```
+
+    ---
+    # Typelevel Scala
+
+    Typelevel Scala agenda ...
+    
+    --
+    * 42.type (aka SIP-23)
+
+    --
+    * Multiple implicit parameter blocks
+
+    --
+    * Partial type application
+
+    --
+    * Improved implicit resolution performance for inductive implicits
+
+    --
+    * Implicit prioritization
+
+    --
+    * Core Scala
+
+    ---
+    class: center, middle
+
+    # Questions?
+
+    ---
+    class: center, middle, hero
+
+    .title[
+      # Thank You
+      ## Miles Sabin, [@milessabin](http://twitter.com/milessabin)
+      ### http://typelevel.org/
+
+      [![Typelevel logo](img/logo.svg)](http://typelevel.org)
+    ]
+
+  </textarea>
+  <!--
+    There's a copy of this JS included in the cached folder,
+    to give yourself a chance if you have no internets /o\
+  -->
+  <script src="cache/remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create({
+      //ratio: '4:3',
+      ratio: '16:9',
+
+
+      slideNumberFormat: '',
+      // Or you might like the page number bottom right:
+      // slideNumberFormat: '%current%',
+
+      // Default: use ```sql ..``` etc to override
+      highlightLanguage: 'scala',
+
+      // Plausible style for blue background:
+      highlightStyle: 'github',
+
+      // These also look reasonable:
+      //highlightStyle: 'default',
+      //highlightStyle: 'ascetic',
+      //highlightStyle: 'vs',
+
+      //Good styles, but don't really work with a blue background:
+      //highlightStyle: 'ir_black',
+      //highlightStyle: 'dark',
+
+      });
+  </script>
+</body>
+</html>
