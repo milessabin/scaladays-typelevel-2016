@@ -2,7 +2,7 @@
 
 Slides from my Typelevel status update at Scala Days 2016 in Berlin.
 
-The slides are online [here](http://milessabin.com/talks/2016/06/17/scaladaya-typelevel-2016). Video should be
+The slides are online [here](http://milessabin.com/talks/2016/06/17/scala-days-typelevel-2016). Video should be
 available later.
 
 ### Resources
